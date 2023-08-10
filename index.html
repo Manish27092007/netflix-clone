@@ -4,9 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="assets/favicon.ico" />
-    <link rel="apple-touch-icon" href="assets/favicon_package/apple-touch-icon.png" />
-    <link rel="android-chrome-512x512" href="assets/favicon_package/android-chrome-512x512.png">
-    <link rel="android-chrome-192x192" href="assets/favicon_package/android-chrome-192x192.png">
+    <link
+      rel="apple-touch-icon"
+      href="assets/favicon_package/apple-touch-icon.png" />
+    <link
+      rel="android-chrome-512x512"
+      href="assets/favicon_package/android-chrome-512x512.png" />
+    <link
+      rel="android-chrome-192x192"
+      href="assets/favicon_package/android-chrome-192x192.png" />
     <title>Netflix Clone</title>
     <link
       rel="stylesheet"
@@ -14,21 +20,28 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.css"  rel="stylesheet" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.css"
+      rel="stylesheet" />
   </head>
   <body>
     <header>
-      <div class="conatiner" style="align-items: center; margin: auto;">
-      <a href="#" target="_blank">
-      <img src="./assets/Netflix_Logo.png" alt="logo" style="width: 200px; height: 150px; cursor: pointer;">
-      </a>
-    </div>
-  </header>
+      <div class="conatiner" style="align-items: center; margin: auto">
+        <a href="#" target="_self">
+          <img
+            src="./assets/Netflix_Logo.png"
+            alt="logo"
+            style="width: 200px; height: 150px; cursor: pointer" />
+        </a>
+      </div>
+    </header>
     <main>
-      <div class="featured" style="font-family: 'Bebas Neue', sans-serif; font-weight: bold;">
+      <div
+        class="featured"
+        style="font-family: 'Bebas Neue', sans-serif; font-weight: bold">
         <h2 class="my-2">NETFLIX Clone</h2>
-        <div class="featured__buttons mx-1">
+        <div class="featured__buttons mx-1" onclick="displayMsg()">
           <button class="button__play">
             <i class="fas fa-play mx-1"></i>Play
           </button>
@@ -40,25 +53,25 @@
       </div>
       <div class="netflixOriginals">
         <div class="original__header">
-          <h2>NETFLIX ORIGINALS</h2>
+          <h2 class="headings">NETFLIX ORIGINALS</h2>
         </div>
-        <div class="original__movies">
+        <div class="original__movies" style="width: max-content">
           <!-- Orignal Movies List Here -->
         </div>
       </div>
       <div class="movies">
         <div class="movies__header">
-          <h1>Wishlist</h1>
+          <h1 class="headings">Wishlist</h1>
         </div>
-        <div id="wishlist" class="movies__container"></div>
+        <div id="wishlist"></div>
         <div class="movies__header">
-          <h2>Trending Now</h2>
+          <h2 class="headings">Trending Now</h2>
         </div>
         <div id="trending" class="movies__container">
           <!-- Trending Movies List Here -->
         </div>
         <div class="movies__header">
-          <h2>Top Rated</h2>
+          <h2 class="headings">Top Rated</h2>
         </div>
         <div id="top_rated" class="movies__container">
           <!-- Top Rated Movies List Here -->
@@ -97,36 +110,94 @@
         </div>
       </div>
     </div>
-    <div class="container"><span><br><br></span></div>
-    <footer class="text-gray-600 body-font" style="background-color: #343a40; margin-bottom: -1rem; margin-left: -2rem; margin-right: -2rem;">
-      <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
-        <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-          <img src="./assets/favicon_package/favicon-32x32.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top" style="border-radius: 75%; height: 50px; width: 50px;">
-                  
-          <span class="ml-3 text-xl" style="color: antiquewhite; font-size: larger; font-weight: bold; font-family: 'Bebas Neue' sans-serif; text-decoration: none;">Netflix Clone</span>
+
+    <div class="container">
+      <span><br /><br /></span>
+    </div>
+
+    <footer
+      class="text-gray-600 body-font"
+      style="background-color: #343a40; margin-bottom: -1rem; margin-top: 1rem">
+      <div
+        class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+        <a
+          class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+          <img
+            src="./assets/favicon_package/favicon-32x32.png"
+            alt="Logo"
+            width="30"
+            height="24"
+            class="d-inline-block align-text-top"
+            style="border-radius: 75%; height: 50px; width: 50px" />
+
+          <span
+            class="ml-3 text-xl"
+            style="
+              color: antiquewhite;
+              font-size: larger;
+              font-weight: bold;
+              font-family: 'Bebas Neue' sans-serif;
+              text-decoration: none;
+            "
+            >Netflix Clone</span
+          >
         </a>
-        <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2023 Netflix Clone
+        <p
+          class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
+          © 2023 Netflix Clone
         </p>
-        <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        <span
+          class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
           <a class="text-gray-500">
-            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            <svg
+              fill="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-5 h-5"
+              viewBox="0 0 24 24">
+              <path
+                d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
             </svg>
           </a>
           <a class="ml-3 text-gray-500">
-            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+            <svg
+              fill="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-5 h-5"
+              viewBox="0 0 24 24">
+              <path
+                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
             </svg>
           </a>
           <a class="ml-3 text-gray-500">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-5 h-5"
+              viewBox="0 0 24 24">
               <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+              <path
+                d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
             </svg>
           </a>
           <a class="ml-3 text-gray-500">
-            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
-              <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <svg
+              fill="currentColor"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="0"
+              class="w-5 h-5"
+              viewBox="0 0 24 24">
+              <path
+                stroke="none"
+                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
               <circle cx="4" cy="4" r="2" stroke="none"></circle>
             </svg>
           </a>
