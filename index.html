@@ -18,23 +18,28 @@
 
 <body>
   <header>
-    <div class="conatiner" style="align-items: center; margin: auto">
+    <div class="conatiner mb-3 my-4" style="align-items: center; margin: auto">
       <a href="#" target="_self">
-        <img src="./assets/Netflix_Logo.png" alt="logo" style="width: 200px; height: 150px; cursor: pointer" />
+        <img src="./assets/logo.png" alt="logo" style="width: 275px; height: 110px; cursor: pointer" />
       </a>
+      <a href="#" class="btn btn-rounded">Sign In</a>
     </div>
   </header>
   <main>
-    <div class="featured" style="font-family: 'Bebas Neue', sans-serif; font-weight: bold">
-      <h2 class="my-2">NETFLIX Clone</h2>
-      <div class="featured__buttons mx-1" onclick="displayMsg()">
-        <button class="button__play">
-          <i class="fas fa-play mx-1"></i>Play
-        </button>
-        <button class="mx-2">My List</button>
+    <div class="featured">
+      <!-- <h2 class="my-2">NETFLIX Clone</h2> -->
+      <div class="showcase-content">
+        <h1>See what's next</h1>
+        <p>Watch anywhere. Cancel Anytime</p>
       </div>
-      <div class="featured__description my-3">
-        A place where you can find every movie of your choice...
+      <div class="container featured__buttons mx-1 mt-6" onclick="displayMsg()">
+        <div class="container mt-5">
+          <button class="button__play my-3">
+            <i class="fas fa-play mx-1"></i>Play
+          </button>
+          <button class="button__list mx-2 my-3">
+            <i class="fas fa-list"></i> My List</button>
+        </div>
       </div>
     </div>
     <div class="netflixOriginals">
@@ -45,23 +50,19 @@
         <!-- Orignal Movies List Here -->
       </div>
     </div>
-    <div class="movies">
-      <div class="movies__header">
-        <h1 class="headings">Wishlist</h1>
-      </div>
-      <div id="wishlist"></div>
-      <div class="movies__header">
-        <h2 class="headings">Trending Now</h2>
-      </div>
-      <div id="trending" class="movies__container">
-        <!-- Trending Movies List Here -->
-      </div>
-      <div class="movies__header">
-        <h2 class="headings">Top Rated</h2>
-      </div>
-      <div id="top_rated" class="movies__container">
-        <!-- Top Rated Movies List Here -->
-      </div>
+    <div id="wishlist"></div>
+    <div class="movies__header">
+      <h2 class="headings">Trending Now</h2>
+    </div>
+    <div id="trending" class="movies__container">
+      <!-- Trending Movies List Here -->
+    </div>
+    <div class="movies__header">
+      <h2 class="headings">Top Rated</h2>
+    </div>
+    <div id="top_rated" class="movies__container">
+      <!-- Top Rated Movies List Here -->
+    </div>
     </div>
   </main>
   <!-- Modal -->
@@ -90,8 +91,8 @@
   <footer class="text-gray-600 body-font" style="background-color: #343a40; margin-bottom: -1rem; margin-top: 1rem">
     <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
       <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-        <img src="./assets/favicon_package/favicon-32x32.png" alt="Logo" width="30" height="24"
-          class="d-inline-block align-text-top" style="border-radius: 75%; height: 50px; width: 50px" />
+        <img src="./assets/favicon_package/favicon-32x32.png" alt="Footer logo" width="30" height="24"
+          class="d-inline-block align-text-top" style="height: 50px; width: 50px" />
 
         <span class="ml-3 text-xl" style="
               color: antiquewhite;

@@ -44,14 +44,14 @@ showMovies = (movies, dom_element, path_type) => {
 // ** Function that fetches Netflix Originals **
 function getOriginals() {
   var url =
-    'https://api.themoviedb.org/3/discover/tv?api_key=19f84e11932abbc79e6d83f82d6d1045&with_networks=213&page=1'
+    'https://api.themoviedb.org/3/discover/tv?api_key=19f84e11932abbc79e6d83f82d6d1045&with_networks=213&page=1&language=en-US'
   fetchMovies(url, '.original__movies', 'poster_path')
 }
 
 // ** Function that fetches Trending Movies **
 function getTrendingNow() {
   var url =
-    'https://api.themoviedb.org/3/trending/movie/week?api_key=19f84e11932abbc79e6d83f82d6d1045&page=1'
+    'https://api.themoviedb.org/3/trending/movie/week?api_key=19f84e11932abbc79e6d83f82d6d1045&page=1&language=en-US'
   fetchMovies(url, '#trending', 'backdrop_path')
 }
 
