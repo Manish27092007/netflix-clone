@@ -1,7 +1,7 @@
 body {
   background-color: #111;
   color: white;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Bebas Neue' sans-serif;
   margin: 0;
   display: flexbox;
 }
@@ -133,7 +133,7 @@ img {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 7.4rem;
+  height: 7.5rem;
   background-image: linear-gradient(
     180deg,
     transparent,
@@ -152,16 +152,20 @@ img {
   padding-left: 30px;
 }
 
-.featured h2 {
-  font-size: 50px;
+.featured__title {
+  font-size: 3rem;
+  font-weight: 700;
+  padding-bottom: 0.3rem;
   margin: 0;
-  z-index: 10;
+  display: block;
+  padding-top: 15rem;
+  margin-bottom: -1rem;
+  color: #fff;
 }
 
-.mt-5 {
+.mt-1 {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-left: -2rem;
 }
 
 
@@ -239,8 +243,7 @@ img {
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
   border-radius: 2px;
   position: absolute;
-  right: 0;
-  top: 25%;
+  right: -3%;
   transform: translate(-50%, -50%);
   text-decoration: none;
 }
@@ -264,8 +267,8 @@ img {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 9rem;
-  margin-bottom: -5rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
   font-size: 35px;
 }
 
@@ -304,4 +307,19 @@ img {
     font-size: 2.5rem;
     line-height: 1;
   }
+}
+
+.header__img {
+  width: 150px; 
+  height: 100px; 
+  cursor: pointer;
+  position: absolute;
+  left: 25px;
+  top: -8px;
+  object-fit: contain;
+}
+
+.featured__description {
+  margin-left: -15px;
+  height: 200px;
 }
