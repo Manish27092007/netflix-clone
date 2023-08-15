@@ -4,7 +4,7 @@ This repository contains the code for building a Netflix-inspired clone using HT
 
 ## Preview
 
-![image](https://github.com/Mubassim-Khan/Netflix-Clone/blob/main/assets/Preview.jpg)
+![image](https://github.com/Mubassim-Khan/Netflix-Clone/blob/main/Preview.jpg)
 
 ## Features
 
