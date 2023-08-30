@@ -40,8 +40,8 @@
         <h1 class="featured__title">Dark</h1>
         <div
           class="featured__buttons container mx-1 mt-6"
-          onclick="displayMsg()">
-          <div class="container mt-1">
+          >
+          <div class="container mt-1" onclick="displayMsg()">
             <button class="button__play my-3">
               <i class="fas fa-play mx-1"></i>Play
             </button>
@@ -81,6 +81,10 @@
       <div id="top_rated" class="movies__container">
         <!-- Top Rated Movies List Here -->
       </div>
+      <div class="showcase-content">
+        <h1>Genres</h1>
+        <!-- <p>Movies selected from different genres</p> -->
+      </div>
       <div class="movies__header">
         <h2 class="headings">Action</h2>
       </div>
@@ -100,18 +104,6 @@
         <!-- Animation Movies List Here -->
       </div>
       <div class="movies__header">
-        <h2 class="headings">Thriller</h2>
-      </div>
-      <div id="thriller" class="movies__container">
-        <!-- Thriller Movies List Here -->
-      </div>
-      <div class="movies__header">
-        <h2 class="headings">Science Fiction</h2>
-      </div>
-      <div id="science_fiction" class="movies__container">
-        <!-- Science Fiction Movies List Here -->
-      </div>
-      <div class="movies__header">
         <h2 class="headings">Crime</h2>
       </div>
       <div id="crime" class="movies__container">
@@ -128,6 +120,78 @@
       </div>
       <div id="documentary" class="movies__container">
         <!-- Documentary Movies List Here -->
+      </div>
+      <div class="movies__header">
+        <h2 class="headings">Drama</h2>
+      </div>
+      <div id="drama" class="movies__container">
+        <!-- Drama Movies List Here -->
+      </div>
+      <div class="movies__header">
+        <h2 class="headings">Family</h2>
+      </div>
+      <div id="family" class="movies__container">
+        <!-- Family Movies List Here -->
+      </div>
+      <div class="movies__header">
+        <h2 class="headings">Fantasy</h2>
+      </div>
+      <div id="fantasy" class="movies__container">
+        <!-- Fantasy Movies List Here -->
+      </div>
+      <div class="movies__header">
+        <h2 class="headings">History</h2>
+      </div>
+      <div id="history" class="movies__container">
+        <!-- History Movies List Here -->
+      </div>
+      <div class="movies__header">
+        <h2 class="headings">Horror</h2>
+      </div>
+      <div id="horror" class="movies__container">
+        <!-- Horror Movies List Here -->
+      </div>
+      <div class="movies__header">
+        <h2 class="headings">Music</h2>
+      </div>
+      <div id="music" class="movies__container">
+        <!-- Music Movies List Here -->
+      </div>
+      <div class="movies__header">
+        <h2 class="headings">Mystery</h2>
+      </div>
+      <div id="mystery" class="movies__container">
+        <!-- Mystery Movies List Here -->
+      </div>
+      <div class="movies__header">
+        <h2 class="headings">Science Fiction</h2>
+      </div>
+      <div id="science_fiction" class="movies__container">
+        <!-- Science Fiction Movies List Here -->
+      </div>
+      <div class="movies__header">
+        <h2 class="headings">Thriller</h2>
+      </div>
+      <div id="thriller" class="movies__container">
+        <!-- Thriller Movies List Here -->
+      </div>
+      <div class="movies__header">
+        <h2 class="headings">TV Movies</h2>
+      </div>
+      <div id="tv_movies" class="movies__container">
+        <!-- TV Movies List Here -->
+      </div>
+      <div class="movies__header">
+        <h2 class="headings">War</h2>
+      </div>
+      <div id="war" class="movies__container">
+        <!-- War Movies List Here -->
+      </div>
+      <div class="movies__header">
+        <h2 class="headings">Western</h2>
+      </div>
+      <div id="western" class="movies__container">
+        <!-- Western Movies List Here -->
       </div>
     </main>
     <!-- Modal -->
@@ -169,7 +233,7 @@
 
     <footer
       class="text-gray-600 body-font"
-      style="background-color: #343a40; margin-bottom: -5rem; margin-top: 1rem">
+      style="background-color: #000; margin-bottom: -5rem; margin-top: 1rem; background: linear-gradient(360deg, transparent, rgba(37, 37, 37, 0.61), #111 );">
       <div
         class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
         <a
@@ -180,7 +244,7 @@
             width="30"
             height="24"
             class="d-inline-block align-text-top"
-            style="height: 50px; width: 50px" />
+            style="height: 50px; width: 50px; border-radius: 5px;" />
 
           <span
             class="ml-3 text-xl"
@@ -264,7 +328,7 @@
           <!--LinkedIn-->
           <a
             class="ml-3 text-gray-500"
-            href="https://www.linkedin.com/in/mubassim-ahmed-khan-8b835025a/"
+            href="https://www.linkedin.com/in/mubassim-ahmed-khan/"
             rel="noopener"
             target="_blank"
             title="LinkedIn" />

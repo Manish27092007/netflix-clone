@@ -5,11 +5,21 @@ window.onload = () => {
   getActionMovies()
   getAdventureMovies()
   getAnimationMovies()
-  getThrillerMovies()
-  getScienceFictionMovies()
   getCrimeMovies()
   getComedyMovies()
   getDocumentaryMovies()
+  getDramaMovies()
+  getFamilyMovies()
+  getFantasyMovies()
+  getHistoryMovies()
+  getHorrorMovies()
+  getMusicMovies()
+  getMysteryMovies()
+  getScienceFictionMovies()
+  getThrillerMovies()
+  getTVMovies()
+  getWarMovies()
+  getWesternMovies()
 }
 
 // fetchMovies('https://api.themoviedb.org/3/movie/top_rated?api_key=19f84e11932abbc79e6d83f82d6d1045&language=en-US&page=1', 'top_rated', 'backdrop_path')
@@ -126,10 +136,80 @@ function getDocumentaryMovies() {
   fetchMovies(url, '#documentary', 'backdrop_path')
 }
 
+// ** Function that fetches Drama Movies **
+function getDramaMovies() {
+  var url =
+    'https://api.themoviedb.org/3/discover/movie?api_key=19f84e11932abbc79e6d83f82d6d1045&with_genres=18'
+  fetchMovies(url, '#drama', 'backdrop_path')
+}
+
+// ** Function that fetches Family Movies **
+function getFamilyMovies() {
+  var url =
+    'https://api.themoviedb.org/3/discover/movie?api_key=19f84e11932abbc79e6d83f82d6d1045&with_genres=10751'
+  fetchMovies(url, '#family', 'backdrop_path')
+}
+
+// ** Function that fetches Fantasy Movies **
+function getFantasyMovies() {
+  var url =
+    'https://api.themoviedb.org/3/discover/movie?api_key=19f84e11932abbc79e6d83f82d6d1045&with_genres=14'
+  fetchMovies(url, '#fantasy', 'backdrop_path')
+}
+
+// ** Function that fetches History Movies **
+function getHistoryMovies() {
+  var url =
+    'https://api.themoviedb.org/3/discover/movie?api_key=19f84e11932abbc79e6d83f82d6d1045&with_genres=36'
+  fetchMovies(url, '#history', 'backdrop_path')
+}
+
+// ** Function that fetches Horror Movies **
+function getHorrorMovies() {
+  var url =
+    'https://api.themoviedb.org/3/discover/movie?api_key=19f84e11932abbc79e6d83f82d6d1045&with_genres=27'
+  fetchMovies(url, '#horror', 'backdrop_path')
+}
+
+// ** Function that fetches Music Movies **
+function getMusicMovies() {
+  var url =
+    'https://api.themoviedb.org/3/discover/movie?api_key=19f84e11932abbc79e6d83f82d6d1045&with_genres=10402'
+  fetchMovies(url, '#music', 'backdrop_path')
+}
+
+// ** Function that fetches Mystery Movies **
+function getMysteryMovies() {
+  var url =
+    'https://api.themoviedb.org/3/discover/movie?api_key=19f84e11932abbc79e6d83f82d6d1045&with_genres=9648'
+  fetchMovies(url, '#mystery', 'backdrop_path')
+}
+
+// ** Function that fetches TV Movies **
+function getTVMovies() {
+  var url =
+    'https://api.themoviedb.org/3/discover/movie?api_key=19f84e11932abbc79e6d83f82d6d1045&with_genres=10770'
+  fetchMovies(url, '#tv_movies', 'backdrop_path')
+}
+
+// ** Function that fetches War Movies **
+function getWarMovies() {
+  var url =
+    'https://api.themoviedb.org/3/discover/movie?api_key=19f84e11932abbc79e6d83f82d6d1045&with_genres=10752'
+  fetchMovies(url, '#war', 'backdrop_path')
+}
+
+// ** Function that fetches Western Movies **
+function getWesternMovies() {
+  var url =
+    'https://api.themoviedb.org/3/discover/movie?api_key=19f84e11932abbc79e6d83f82d6d1045&with_genres=37'
+  fetchMovies(url, '#western', 'backdrop_path')
+}
+
 // ** Get Movies Trailers **
 
 async function getMovieTrailer(id) {
-  var url = `https://api.themoviedb.org/3/movie/${id}/videos?api_key=19f84e11932abbc79e6d83f82d6d1045&language=en-US&page=1`
+  var url = `https://api.themoviedb.org/3/movie/${id}/videos?api_key=19f84e11932abbc79e6d83f82d6d1045&page=1&language=en-US`
   return await fetch(url).then(response => {
     if (response.ok) {
       return response.json()
